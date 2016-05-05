@@ -1,16 +1,28 @@
+% Setup
 \documentclass[12pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{{images/}}
+
+% Layout margins
 \usepackage[
 	a4paper,
-	top		= 2cm,
-	bottom	= 3cm,
-	left		= 4cm,
-	right	= 2cm
+	top		  = 2cm,
+	bottom  	= 3cm,
+	left		  = 4cm,
+  right	  = 2cm
 ]{geometry}
 
+% Header and footer
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
 
+\pagestyle{fancy}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{}
+
+% Document start
 \title{
 	{Thesis title}\\
 	{\large Institution Name}\\
@@ -23,10 +35,19 @@
 	\maketitle
 	
 	\input{chapters/abstract}
-	
-	\tableofcontents
-	
+
+  {
+    \pagestyle{plain}
+    \tableofcontents
+    \cleardoublepage
+  }
+
+  \setcounter{page}{1}  
+  \rhead{\thepage}  
+  
 	\input{chapters/introduction}
+	
+	\input{chapters/chapter01}
 	
 	\input{chapters/appendix}
 	
