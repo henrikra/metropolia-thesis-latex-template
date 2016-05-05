@@ -1,6 +1,9 @@
 % Setup
-\documentclass[12pt]{report}
+\documentclass[11pt]{report}
 \usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
 \usepackage{graphicx}
 \graphicspath{{images/}}
 
@@ -23,6 +26,24 @@
 }
 \renewcommand{\headrulewidth}{0pt}
 
+% Chapter headings
+\usepackage{titlesec}
+
+\titleformat
+  {\chapter}
+  [hang]
+  {\bfseries}
+  {\thechapter}
+  {12pt}
+  {}
+
+\titleformat
+  {\section}
+  {}
+  {\thesection}
+  {11pt}
+  {}
+
 % --------------------
 % Document start
 % --------------------
@@ -31,7 +52,7 @@
   {\large Institution Name}\\
 }
 \author{Matti Meikäläinen}
-\date{5.6.2016}
+\date{\today}
 
 \begin{document}
 
