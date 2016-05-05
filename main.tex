@@ -7,6 +7,9 @@
 \usepackage{graphicx}
 \graphicspath{{images/}}
 
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
+
 % Layout margins
 \usepackage[
   a4paper,
@@ -16,9 +19,8 @@
   right   = 2cm
 ]{geometry}
 
-\input{setup/header-and-footer}
-
 \input{setup/headings}
+\input{setup/header-and-footer}
 
 % --------------------
 % Document start
@@ -37,13 +39,8 @@
   \input{chapters/abstract}
 
   \input{table-of-contents}
-
-  \setcounter{page}{1}  
   
-  % Add page number to all chapter pages
-  \fancypagestyle{plain}{
-    \rhead{\thepage}
-  }
+  \setcounter{page}{1}  
   
   \input{chapters/introduction}
 	

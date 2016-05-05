@@ -1,13 +1,11 @@
-\usepackage{fancyhdr}
-\usepackage{etoolbox}
-
 \pagestyle{fancy}
-\fancypagestyle{plain}{
-  \fancyhf{}
-}
 
 \lhead{}
 \rhead{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
 \cfoot{}
+
+\fancypagestyle{plain}{
+  \rhead{\thepage}
+}
