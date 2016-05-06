@@ -58,9 +58,10 @@
 }
 
 \newenvironment
-  {myitemize}
-  {\begin{itemize}[leftmargin=*,labelindent=36pt]
-    \setlength{\itemsep}{0pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}     }
-{ \end{itemize}                  }
+  {bullet-list}
+  {\begin{itemize}
+    [leftmargin=*,
+    labelindent=36pt,
+    labelsep=1cm]
+  }
+  {\end{itemize}}
