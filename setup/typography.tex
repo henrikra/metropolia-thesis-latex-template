@@ -46,3 +46,13 @@
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{19pt}
 \renewcommand{\baselinestretch}{1.3}
+
+% Quote
+\patchcmd
+  {\quote}
+  {\rightmargin}
+  {\leftmargin 2.5cm \rightmargin}
+  {}{}
+\AtBeginEnvironment{quote}{
+  \fontsize{10pt}{10pt}\selectfont
+}
