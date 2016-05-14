@@ -1,7 +1,7 @@
 % Setup
 \documentclass[11pt]{report}
 
-\usepackage{graphicx}
+\usepackage{graphicx, changepage}
 \graphicspath{{images/}}
 
 \usepackage{fancyhdr}
@@ -25,16 +25,13 @@
 % --------------------
 % Document start
 % --------------------
-\title{
-  {Thesis title}\\
-  {\large Institution Name}\\
-}
+\title{Thesis title}
 \author{Matti Meikäläinen}
 \date{\today}
 
 \begin{document}
 
-  \maketitle
+  \input{title-page}
 	
   \input{chapters/abstract}
 
