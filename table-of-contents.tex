@@ -1,5 +1,15 @@
+\fancypagestyle{table-of-contents}{
+   \fancyhf{}
+   \lfoot{
+     \begin{adjustwidth}{-4.2cm}{5cm}
+       \includegraphics[]{line-with-metropolia-logo}
+     \end{adjustwidth}  
+   }
+   \setlength{\footskip}{5pt}
+}
+
 {
   \tableofcontents
-  \thispagestyle{empty}
+  \thispagestyle{table-of-contents}
   \cleardoublepage
 }
