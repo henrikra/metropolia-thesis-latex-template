@@ -35,5 +35,14 @@
 *.xdy
 *.tdo
 
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+
 ### Compiled thesis ###
 main.pdf

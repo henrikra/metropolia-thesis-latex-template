@@ -28,6 +28,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[finnish]{babel}
 
+\usepackage{hyperref}
+
 \begin{document}
 
   \input{cover}
@@ -50,5 +52,8 @@
   \input{chapters/chapter01}
 	
   \input{chapters/appendix}
-	
+  
+  \renewcommand{\bibname}{Lähteet}
+  \bibliographystyle{plain}
+  \bibliography{references}
 \end{document}
