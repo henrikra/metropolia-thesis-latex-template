@@ -40,13 +40,6 @@
   
   \setcounter{page}{1}
   
-  % Start new chapters on same page
-  \makeatletter
-  \patchcmd
-    {\chapter}
-    {\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
-  \makeatother
-  
   \input{chapters/introduction}
 	
   \input{chapters/chapter01}
